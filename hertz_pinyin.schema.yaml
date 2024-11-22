@@ -1,0 +1,43 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: hertz_pinyin
+  name: 拼音（勿用）
+  version: "2024-11-22"
+  description: 用于词典部署（不用勾选）
+
+__include: hertz_tiger:/switches_engine_script       # Rime模块
+__include: hertz_tiger:/s2t_filter                   # 简繁滤镜
+
+speller:
+  alphabet: ";'zyxwvutsrqponmlkjihgfedcba]"    # 输入范围 码元
+  delimiter: " '"
+  algebra:
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+
+translator:
+  dictionary: hertz_pinyin           # 字典文件
+  prism: hertz_pinyin
+  initial_quality: 1           # 该翻译器出字优先级别
+  __include: hertz_tiger:/dict_All_false
+
+key_binder:
+  import_preset: default
+  custom_bindings:
+    __append:
+      # 在這裏添加只在本方案中生效的按鍵綁定
+  bindings:
+    __patch:
+      - hertz_tiger:/keys/page_up_down
+      - hertz_tiger:/keys/selector
+      - hertz_tiger:/keys/options_toggle
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+
+punctuator: # 设定符号表，这里直接导入外部的symbols文件夹
+  import_preset: symbols

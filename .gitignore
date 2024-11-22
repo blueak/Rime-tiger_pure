@@ -1,0 +1,8 @@
+/build
+/Fonts
+/sync
+installation.yaml
+squirrel.yaml
+user.yaml
+*.custom.yaml
+.DS_Store

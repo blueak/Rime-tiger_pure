@@ -1,0 +1,27 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: hertz_fast_symbol
+  name: 快符（勿用）
+  version: "2024-11-22"
+  description: 用于词典部署（不用勾选）
+
+engine:
+  translators:
+    - table_translator
+
+translator:
+  dictionary: hertz_fast_symbol
+  __include: hertz_tiger:/dict_All_false
+
+key_binder:
+  import_preset: default
+  custom_bindings:
+    __append:
+      # 在這裏添加只在本方案中生效的按鍵綁定
+  bindings:
+    __patch:
+      - hertz_tiger:/keys/page_up_down
+      - hertz_tiger:/keys/selector
+      - hertz_tiger:/keys/options_toggle
