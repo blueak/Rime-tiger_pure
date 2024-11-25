@@ -1,4 +1,5 @@
 = 纯净虎单方案
+:hardbreaks-option:
 
 == 原作者描述
 方案名：hertz_tiger_pure
