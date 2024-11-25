@@ -10,12 +10,46 @@ schema:
 __include: hertz_tiger:/switches_engine_script       # Rime模块
 __include: hertz_tiger:/s2t_filter                   # 简繁滤镜
 
-speller:
-  alphabet: ";'zyxwvutsrqponmlkjihgfedcba]"    # 输入范围 码元
-  delimiter: " '"
+ #小鹤双拼反查
   algebra:
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([zcs]h).+$/$1/
+    - erase/^xx$/
+    - derive/^([jqxy])u$/$1v/
+    - derive/^([aoe])([ioun])$/$1$1$2/
+    - xform/^([aoe])(ng)?$/$1$1$2/
+    - xform/iu$/Q/
+    - xform/(.)ei$/$1W/
+    - xform/uan$/R/
+    - xform/[uv]e$/T/
+    - xform/un$/Y/
+    - xform/^sh/U/
+    - xform/^ch/I/
+    - xform/^zh/V/
+    - xform/uo$/O/
+    - xform/ie$/P/
+    - xform/i?ong$/S/
+    - xform/ing$|uai$/K/
+    - xform/(.)ai$/$1D/
+    - xform/(.)en$/$1F/
+    - xform/(.)eng$/$1G/
+    - xform/[iu]ang$/L/
+    - xform/(.)ang$/$1H/
+    - xform/ian$/M/
+    - xform/(.)an$/$1J/
+    - xform/(.)ou$/$1Z/
+    - xform/[iu]a$/X/
+    - xform/iao$/N/
+    - xform/(.)ao$/$1C/
+    - xform/ui$/V/
+    - xform/in$/B/
+    - xlit/QWRTYUIOPSDFGHJKLZXCVBNM/qwrtyuiopsdfghjklzxcvbnm/
+     #如要全拼反查，注释上面的speller段，用下面的
+ #全拼反查
+ #   speller:
+ # alphabet: ";'zyxwvutsrqponmlkjihgfedcba]"    # 输入范围 码元
+  #delimiter: " '"
+ # algebra:
+    #- abbrev/^([a-z]).+$/$1/
+    #- abbrev/^([zcs]h).+$/$1/
 
 translator:
   dictionary: hertz_pinyin           # 字典文件
