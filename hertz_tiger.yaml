@@ -230,5 +230,6 @@ punctuator:
     '/bi' : [ '[.big]' ]    
     '/lt' : [ '[.line-through]' ]    
     '/ul' : [ '[.underline]' ]    
+    '/le' : [ '[.lead]' ]    
      
  
