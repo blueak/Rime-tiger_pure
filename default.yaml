@@ -10,7 +10,6 @@ switcher:
   caption: "〔方案選單〕"
   hotkeys:
     - "Control+grave"
-    - "Control+F8"
   save_options:
     - full_shape
     - ascii_punct
@@ -23,9 +22,9 @@ switcher:
   abbreviate_options: true
   option_list_separator: '／'
 
-menu:
-  alternative_select_labels: [ ⑴, ⑵, ⑶, ⑷, ⑸, ⑹, ⑺, ⑻, ⑼, ⑽ ]
-  page_size: 9
+#menu:
+ # alternative_select_labels: [ ⑴, ⑵, ⑶, ⑷, ⑸, ⑹, ⑺, ⑻, ⑼, ⑽ ]
+  #page_size: 9
 
 punctuator:
   __include: hertz_tiger:/punctuator
