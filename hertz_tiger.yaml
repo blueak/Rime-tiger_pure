@@ -226,10 +226,13 @@ punctuator:
     '/no' : [ '[NOTE]' ]    
     '/ca' : [ '[CAUTION]' ]    
     '/qa' : [ '[qanda]' ]    
-    '/sm' : [ '[.small]' ]    
-    '/bi' : [ '[.big]' ]    
-    '/lt' : [ '[.line-through]' ]    
-    '/ul' : [ '[.underline]' ]    
+    '/sm' : [ '[.small]##' ]    
+    '/bi' : [ '[.big]##' ]    
+    '/lt' : [ '[.line-through]##' ]    
+    '/ul' : [ '[.underline]##' ]    
+    '/ol' : [ '[overline]##' ]    
+    '/yl' : [ '[yellow]##' ]    
+    '/rl' : [ '[red yellow-background]##' ]    
     '/le' : [ '[.lead]' ]    
      
  
