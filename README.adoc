@@ -1,7 +1,15 @@
 = 纯净虎单方案
-
+:icons: font
+:hardbreaks:
+:sectnums:
+:toc: left
 - 方案名：hertz_tiger_pure
 - 方案描述：仅保留快符输入、简繁转换、字集过滤、输入历史、拼音反查等功能。
 
+[NOTE]
+原作者链接：https://github.com/hertz-hwang/Rime-tiger_pure
+他还有个很有意思的虎码全功能版，有兴趣自寻
+
 == 个人修改
 反查改为小鹤，一些不影响使用的小变更
+
