@@ -85,11 +85,13 @@ keys:
       - { when: has_menu, accept: bracketright, send: Page_Down } # ] 前翻
       - { when: has_menu, accept: minus, send: Page_Up }
       - { when: has_menu, accept: equal, send: Page_Down }
+      - { when: has_menu, accept: KP_Enter, send: Return }
   selector:
     __append:
       - { when: has_menu, accept: semicolon, send: 2 }  # 分号次选
       - { when: has_menu, accept: apostrophe, send: 3 } # 引号三选
       - { when: composing, accept: Tab, send: Escape }  # tab清屏
+      - { when: has_menu, accept: KP_Return, send: Return } #自改小键盘回车字母上屏
   options_toggle:
     __append:
       - { when: composing, accept: "Control+b", toggle: extended_char }      # 字集滤镜
