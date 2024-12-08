@@ -236,5 +236,6 @@ punctuator:
     '/rl' : [ '[red yellow-background]##' ]    
     '/le' : [ '[.lead]' ]    
     '/xx' : [ '****' ]    
+    '/ms' : [ ' :: ' ]    
      
  
