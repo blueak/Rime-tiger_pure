@@ -235,5 +235,6 @@ punctuator:
     '/yl' : [ '[yellow]##' ]    
     '/rl' : [ '[red yellow-background]##' ]    
     '/le' : [ '[.lead]' ]    
+    '/xx' : [ '****' ]    
      
  
