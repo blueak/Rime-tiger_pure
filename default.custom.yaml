@@ -26,8 +26,7 @@ switcher:
  # alternative_select_labels: [ ⑴, ⑵, ⑶, ⑷, ⑸, ⑹, ⑺, ⑻, ⑼, ⑽ ]  # 修改候选项标签
   #page_size: 9 # 候选词个数
 
-punctuator:
-  __include: tiger:/punctuator
+ 
 
 key_binder:
   import_preset: default
@@ -61,6 +60,9 @@ ascii_composer:
     Shift_L: commit_code
     Shift_R: commit_text
 
+
+     
+ 
 
  # 翻页 , .
       # - { when: paging, accept: comma, send: Page_Up }

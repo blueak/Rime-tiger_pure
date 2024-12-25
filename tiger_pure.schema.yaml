@@ -56,4 +56,4 @@ recognizer:
     reverse_lookup: "^`[a-z]*'?$"
 
 punctuator:
-  __include: tiger:/punctuator
+  __include: symbols:/punctuator
