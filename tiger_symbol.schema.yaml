@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 schema:
-  schema_id: fast_symbol
+  schema_id: tiger_symbol
   name: 快符（勿用）
   version: "2024-11-22"
   description: 用于词典部署（不用勾选）
@@ -12,7 +12,7 @@ engine:
     - table_translator
 
 translator:
-  dictionary: fast_symbol
+  dictionary: tiger_symbol
   __include: tiger:/dict_All_false
 
 key_binder:

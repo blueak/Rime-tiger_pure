@@ -41,7 +41,7 @@ switches_engine_table:
       - punct_translator                            # 转换标点符号
       - reverse_lookup_translator                   # 拼音反查
       - table_translator                            # 码表转换
-      - table_translator@fast_symbol                # 码表转换-快符
+      - table_translator@tiger_symbol                # 码表转换-快符
       - history_translator@input_history            # 输入历史
       - lua_translator@shijian2_translator          # 高级时间
     filters:
@@ -71,7 +71,7 @@ switches_engine_script:
     translators:
       - punct_translator                            # 转换标点符号
       - reverse_lookup_translator                   # 拼音反查
-      - table_translator@fast_symbol                # 码表转换-快符
+      - table_translator@tiger_symbol                # 码表转换-快符
       - script_translator                           # 码表转换
       - history_translator@input_history            # 输入历史
     filters:
@@ -105,9 +105,9 @@ dict_All_false:
   encode_commit_history: false
   enable_completion: false
 
-fast_symbol_translator:
-  fast_symbol:
-    dictionary: fast_symbol
+tiger_symbol_translator:
+  tiger_symbol:
+    dictionary: tiger_symbol
     __include: dict_All_false
 
 reverse_lookup_translator:
