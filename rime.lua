@@ -1,0 +1,1 @@
+shijian2_translator = require("shijian2") -- 高级时间

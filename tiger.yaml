@@ -43,6 +43,7 @@ switches_engine_table:
       - table_translator                            # 码表转换
       - table_translator@fast_symbol                # 码表转换-快符
       - history_translator@input_history            # 输入历史
+      - lua_translator@shijian2_translator          # 高级时间
     filters:
       - lua_filter@*charset_filter                  # 字集过滤
       - simplifier@s2t                              # 简繁滤镜
