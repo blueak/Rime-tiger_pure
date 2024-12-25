@@ -85,7 +85,7 @@ keys:
       - { when: has_menu, accept: bracketright, send: Page_Down } # ] 前翻
       - { when: has_menu, accept: minus, send: Page_Up }
       - { when: has_menu, accept: equal, send: Page_Down }
-      - { when: has_menu, accept: KP_Enter, send: Return }#自改小键盘回车字母上屏
+      - { when: has_menu, accept: KP_Enter, send: Return }  #小键盘回车字母上屏
   selector:
     __append:
       - { when: has_menu, accept: semicolon, send: 2 }  # 分号次选
@@ -238,4 +238,5 @@ punctuator:
     '/xx' : [ '****' ]    
     '/ms' : [ ' :: ' ]    
      
+ 
  
