@@ -77,7 +77,7 @@ local charsets = {
   
   local function init(env)
     -- 当此组件被载入时，打开反查库，并存入 `coredb` 中
-    env.coredb = ReverseDb("build/hertz_charset.reverse.bin")
+    env.coredb = ReverseDb("build/charset.reverse.bin")
   end
   
   return { init = init, func = filter }
